@@ -18,8 +18,10 @@
     </ul>
 </main>
 
-<style>
-    h4 {
-        text-align: center;
-    }
+<style lang="scss">
+$color: red;
+h4 {
+	text-align: center;
+	color: $color;
+}
 </style>

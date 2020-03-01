@@ -3,6 +3,9 @@ import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
+import scss  from 'rollup-plugin-scss'
+const { dirname } = require('path')
+const sass = require('node-sass');
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -22,7 +25,33 @@ export default {
 			// a separate file - better for performance
 			css: css => {
 				css.write('public/build/bundle.css');
-			}
+			},
+
+			preprocess: {
+				style: async ({ content, attributes, filename }) => {
+					if (attributes.lang !== "scss") return;
+
+					const { css, stats } = await new Promise((resolve, reject) => sass.render({
+						file: filename,
+						data: content,
+						includePaths: [
+							dirname(filename),
+						],
+					}, (err, res) => {
+						if (err) reject(err)
+						else resolve(res)
+					}))
+
+					return {
+						code: css.toString(),
+						dependencies: stats.includedFiles
+					}
+				},
+			},
+		}),
+
+		scss({
+			output: './public/build/uikit.css',
 		}),
 
 		// If you have external dependencies installed from
