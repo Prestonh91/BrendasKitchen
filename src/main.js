@@ -1,4 +1,5 @@
 import App from './App.svelte';
+import 'uikit'
 import '../public/scss/app.scss';
 
 const app = new App({

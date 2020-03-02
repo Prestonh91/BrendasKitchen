@@ -1,5 +1,5 @@
 <script>
-    import { link } from 'svelte-spa-router'
+	import { link, location } from 'svelte-spa-router'
     const routes = [
         {
             heading: 'Home',
@@ -14,11 +14,17 @@
 
 <div>
     <h3>Nav</h3>
-    <ul>
+    <ul class="uk-nav uk-nav-default" uk-grid>
         {#each routes as route}
-            <li>
+            <li class="{ route.href === $location ? 'uk-active' : '' }">
                 <a href={route.href} use:link>{route.heading}</a>
             </li>
         {/each}
     </ul>
 </div>
+
+<style>
+a:active {
+	color: red;
+}
+</style>
