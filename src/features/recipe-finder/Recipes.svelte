@@ -1,5 +1,5 @@
 <script>
-    import { recipes } from './resources/recipes'
+    import { recipes } from '../../resources/recipes'
 </script>
 
 <main>

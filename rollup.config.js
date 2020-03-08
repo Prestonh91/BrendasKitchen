@@ -3,6 +3,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
+// import alias from '@rollup/plugin-alias'
 import scss  from 'rollup-plugin-scss'
 const { dirname } = require('path')
 const sass = require('node-sass');
@@ -53,6 +54,11 @@ export default {
 		scss({
 			output: './public/build/uikit.css',
 		}),
+
+		// alias({
+		// 	'@src' : '/src',
+		// 	'@features' : '/src/features',
+		// }),
 
 		// If you have external dependencies installed from
 		// npm, you'll most likely need these plugins. In

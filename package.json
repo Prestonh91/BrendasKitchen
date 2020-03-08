@@ -8,6 +8,7 @@
     "rd": "rollup -c -w"
   },
   "devDependencies": {
+    "@rollup/plugin-alias": "^3.0.1",
     "@rollup/plugin-commonjs": "^11.0.0",
     "@rollup/plugin-node-resolve": "^7.0.0",
     "node-sass": "^4.13.1",
@@ -20,7 +21,7 @@
   },
   "dependencies": {
     "sirv-cli": "^0.4.4",
-	"svelte-spa-router": "^2.0.0",
+    "svelte-spa-router": "^2.0.0",
     "uikit": "^3.3.3"
   }
 }
