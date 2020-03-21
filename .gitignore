@@ -1,4 +1,4 @@
 /node_modules/
 /public/build/
-.code-workspace
+*.code-workspace
 .DS_Store
