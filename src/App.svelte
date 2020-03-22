@@ -1,12 +1,9 @@
 <script>
     import Router from 'svelte-spa-router'
-    import { routes } from './routes/routes'
+	import { layoutRoutes } from './routes/layout.routes'
     import Nav from './app-components/router.svelte'
 </script>
 
-<main>
-    <h1 style="text-align: center">Svelte App</h1>
-
-    <Nav/>
-    <Router {routes}/>
+<main class="uk-height-viewport uk-background-primary">
+    <Router routes={layoutRoutes}/>
 </main>

@@ -1,0 +1,36 @@
+@mixin hook-card-default-hover {
+	box-shadow: $global-large-box-shadow;
+}
+
+@mixin hook-card-default {
+	box-shadow: $global-medium-box-shadow;
+}
+
+// @mixin hook-card(){}
+// @mixin hook-card-body(){}
+// @mixin hook-card-header(){}
+// @mixin hook-card-footer(){}
+// @mixin hook-card-media(){}
+// @mixin hook-card-media-top(){}
+// @mixin hook-card-media-bottom(){}
+// @mixin hook-card-media-left(){}
+// @mixin hook-card-media-right(){}
+// @mixin hook-card-title(){}
+// @mixin hook-card-badge(){}
+// @mixin hook-card-hover(){}
+// @mixin hook-card-default(){}
+// @mixin hook-card-default-title(){}
+// @mixin hook-card-default-hover(){}
+@mixin hook-card-default-header(){
+	border-bottom: 1px solid $global-color
+}
+@mixin hook-card-default-footer(){
+	border-top: 1px solid $global-color
+}
+// @mixin hook-card-primary(){}
+// @mixin hook-card-primary-title(){}
+// @mixin hook-card-primary-hover(){}
+// @mixin hook-card-secondary(){}
+// @mixin hook-card-secondary-title(){}
+// @mixin hook-card-secondary-hover(){}
+// @mixin hook-card-misc(){}

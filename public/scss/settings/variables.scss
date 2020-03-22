@@ -1,3 +1,4 @@
+@use "sass:color";
 //
 // Component:       Variables
 // Description:     Defines common values which are used across all components
@@ -35,6 +36,16 @@ $breakpoint-large-max:                          ($breakpoint-xlarge - 1) !defaul
 // ========================================================================
 
 //
+// colors
+//
+$maximum-blue-gren: 				#2EC4B8;
+$maastricht-blue:					#011627;
+$baby-powder:						#FDFFFC;
+$rose-madder:						#E71D36;
+$mustard:							#FFC857;
+$pewter-grey:						#8e9294;
+
+//
 // Typography
 //
 
@@ -48,31 +59,35 @@ $global-large-font-size:                         1.5rem !default;   // 24px
 $global-medium-font-size:                        1.25rem !default;  // 20px
 $global-small-font-size:                         0.875rem !default; // 14px
 
+$color-primary:								 	 $rose-madder;
+$color-primary-muted:							 rgba($rose-madder, .7);
+
+
 //
 // Colors
 //
 
-$global-color:                                   #666 !default;
+$global-color:                                   $maastricht-blue !default;
 $global-emphasis-color:                          #333 !default;
-$global-muted-color:                             #999 !default;
+$global-muted-color:                             $baby-powder !default;
 
 $global-link-color:                              #1e87f0 !default;
 $global-link-hover-color:                        #0f6ecd !default;
 
-$global-inverse-color:                           #fff !default;
+$global-inverse-color:                           $maximum-blue-gren !default;
 
 //
 // Backgrounds
 //
 
-$global-background:                              #fff !default;
+$global-background:                              $baby-powder !default;
 
-$global-muted-background:                        #f8f8f8 !default;
-$global-primary-background:                      #1e87f0 !default;
-$global-secondary-background:                    #222 !default;
+$global-muted-background:						 $pewter-grey !default;
+$global-primary-background:                      $rose-madder !default;
+$global-secondary-background:					 $maastricht-blue !default;
 
 $global-success-background:                      #32d296 !default;
-$global-warning-background:                      #faa05a !default;
+$global-warning-background:                      #706963 !default;
 $global-danger-background:                       #f0506e !default;
 
 //

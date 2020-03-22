@@ -1,11 +1,16 @@
 @charset 'utf-8';
 
-
-@import '../../node_modules/uikit/src/scss/mixins';
-
-@import '../../node_modules/uikit/src/scss/variables';
 @import './settings/variables.scss';
 
 @import './uikit/card.scss';
+@import './uikit//background.scss';
+@import './uikit//button.scss';
+@import './uikit/form.scss';
+
+@import '../../node_modules/uikit/src/scss/variables';
+@import '../../node_modules/uikit/src/scss/mixins';
+
+@import './uikit/card-mixins.scss';
+@import './uikit/form-mixins.scss';
 
 @import '../../node_modules/uikit/src/scss/uikit';

@@ -81,15 +81,3 @@ $card-large-header-padding-horizontal-l:        $global-large-gutter;
 $card-large-header-padding-vertical-l:          round($global-large-gutter / 2);
 $card-large-footer-padding-horizontal-l:        $global-large-gutter;
 $card-large-footer-padding-vertical-l:          round($global-large-gutter / 2);
-
-@mixin hook-card {
-	box-shadow: $global-medium-box-shadow;
-}
-
-@mixin hook-card-default-hover {
-	box-shadow: $global-large-box-shadow;
-}
-
-// @mixin hook-card-default {
-// 	background: $global-background
-// }

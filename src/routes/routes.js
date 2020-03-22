@@ -3,5 +3,5 @@ import CreateRecipe from '../features/feature-components/CreateRecipe.svelte'
 
 export const routes = {
     '/': Recipes,
-    '/recipe' : CreateRecipe,
+	'/recipe' : CreateRecipe,
 }
